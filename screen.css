@@ -1,1 +1,59 @@
 /* Add screen styles below */
+#top-header {
+    background: #D9D9D9;
+    width: 1440px;
+    height: 316px;
+}
+
+.profile-image {
+    border-radius: 10px;
+    background: #000;
+    width: 216px;
+    height: 216px;
+    flex-shrink: 0;
+}
+
+h1 {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#posts {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+
+.profile-post {
+    width: 407px;
+    height: 407px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F00;
+}
+
+.profile-post:hover {
+    display: inline-flex;
+    padding: 47px 47px 16px 47px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 47px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.25);
+}
