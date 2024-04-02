@@ -1,5 +1,6 @@
 /* Add screen styles below */
 body {
+    background-color: #F0F0F0;
     margin: 0;
 }
 
@@ -19,6 +20,15 @@ nav {
     font-weight: 700;
 }
 
+a {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0px 32px;
+}
+
 #top-header {
     /* Image Settings */
     background: url(images/image2.jpg) lightgray 50%;
@@ -28,16 +38,17 @@ nav {
     /* Section Settings */
     margin: 0 auto;
     display: flex;
-    background: #D9D9D9;
+    min-width: 847px;
+    padding: 64px 300px;
+    flex-direction: column;
     height: 316px;
+    align-items: center;
 }
 
 .row {
-    min-width: 1440px;
     margin: 0 auto;
     display: flex;
-    width: 848px;
-    padding: 0px 296px;
+    width: 847px;
     align-items: center;
     gap: 32px;
 }
@@ -90,7 +101,10 @@ p {
 }
 
 #posts {
+    margin: 0 auto;
     display: flex;
+    width: 847px;
+    padding: 64px 300px;
     align-items: center;
     align-content: center;
     gap: 33px;
@@ -106,8 +120,9 @@ p {
 }
 
 .profile-post:hover {
+    width: 407px;
+    height: 407px;
     display: inline-flex;
-    padding: 47px 47px 16px 47px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
