@@ -113,21 +113,43 @@ p {
 }
 
 .profile-post {
+    background: url(images/social.png);
+    position: relative; /* Add this to enable absolute positioning */
     width: 407px;
     height: 407px;
-    flex-shrink: 0;
     border-radius: 10px;
-    background: #F00;
+    overflow: hidden; /* Hide overflow content */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+/* Add a pseudo-element for the overlay */
+.profile-post::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
 }
 
-.profile-post:hover {
-    width: 407px;
-    height: 407px;
-    display: inline-flex;
-    flex-direction: column;
+.profile-post .overlay-content {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    gap: 47px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Show overlay and buttons on hover */
+.profile-post:hover::after {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.profile-post:hover .overlay-content {
+    display: flex;
 }
