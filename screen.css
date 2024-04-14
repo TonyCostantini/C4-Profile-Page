@@ -183,3 +183,24 @@ p {
     align-items: flex-start;
     gap: 32px;
 }
+
+.like-icon, .heart-icon {
+    fill: #FFFFFF;
+    cursor: pointer;
+}
+
+.like-icon:hover {
+    fill: #47B2FF;
+}
+
+.like-icon.active {
+    fill: #47B2FF;
+}
+
+.heart-icon:hover {
+    fill: #FF4747;
+}
+
+.heart-icon.active {
+    fill: #FF4747;
+}
