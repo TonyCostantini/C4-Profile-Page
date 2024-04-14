@@ -184,16 +184,16 @@ p {
     gap: 32px;
 }
 
-.icon-align .like-icon,
-.icon-align .heart-icon {
+.like-icon,
+.heart-icon {
     fill: #FFFFFF;
     cursor: pointer;
 }
 
-.icon-align .like-icon:hover {
+.like-icon:hover {
     fill: #47B2FF;
 }
 
-.icon-align .heart-icon:hover {
+.heart-icon:hover {
     fill: #FF4747;
 }
