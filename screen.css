@@ -5,7 +5,7 @@ body {
 
 nav {
     /* Box Settings */
-    background-color: #000;
+    background-color: #3C90F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
     /* Section Settings */
     display: flex;
@@ -30,7 +30,7 @@ a {
 
 #top-header {
     /* Image Settings */
-    background: url(images/image2.jpg) lightgray 50%;
+    background: url(images/Background.jpg) grey 75%;
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,9 +69,42 @@ a {
     flex-shrink: 0;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.header-button {
+    background-color: #3C90F3;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    width: 153px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #0056B3;
+}
+
+.header-button:active {
+    background-color: #163C68;
+}
+
 h1 {
     margin: 0;
-    color: #000;
+    color: #FFFFFF;
     font-family: Inter, sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -111,7 +144,6 @@ p {
 }
 
 .profile-post {
-    background: url(images/social.png);
     position: relative;
     width: 407px;
     height: 407px;
